@@ -5,3 +5,7 @@ scanning_backend/output/
 ml_core/.claude/  
 ml_core/models/  
 ml_core/data/ 
+node_modules/  
+scanning_backend/.env  
+scanning_backend/.env 
+scanning_backend/.env 
