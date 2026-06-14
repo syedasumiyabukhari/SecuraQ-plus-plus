@@ -1,0 +1,1 @@
+void func_2(const VAR_5 *VAR_2) { VAR_5 = realloc((void *)VAR_5, ++VAR_3 * sizeof(*VAR_5)); VAR_5[VAR_3 - 1] = *VAR_2; func_2(VAR_5, VAR_3, sizeof(*VAR_5), VAR_5); }

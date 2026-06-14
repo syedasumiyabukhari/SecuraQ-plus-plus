@@ -1,0 +1,2 @@
+INFO:     Will watch for changes in these directories: ['C:\\Sumiya\\FYP\\securaqpp_final\\SecuraQpp_v2_WITH_2FA_EMAIL\\securaqpp\\scanning_backend']
+ERROR:    [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions

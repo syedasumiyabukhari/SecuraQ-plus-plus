@@ -1,0 +1,80 @@
+2026-05-03 22:38:16  WARNING   Stage2 - tree-sitter unavailable (No module named 'tree_sitter'), falling back to regex classifier
+2026-05-03 22:38:16  INFO      Stage2 - ============================================================
+2026-05-03 22:38:16  INFO      Stage2 - Graph construction: FS
+2026-05-03 22:38:16  INFO      Stage2 - ============================================================
+2026-05-03 22:38:16  INFO      Stage2 - Building graphs for split: train
+2026-05-03 22:38:16  INFO      Stage2 -   train: 3772 samples
+2026-05-03 22:38:19  INFO      Stage2 -     [100/3772] valid=100  errors=100
+2026-05-03 22:38:21  INFO      Stage2 -     [200/3772] valid=200  errors=200
+2026-05-03 22:38:24  INFO      Stage2 -     [300/3772] valid=300  errors=300
+2026-05-03 22:38:28  INFO      Stage2 -     [400/3772] valid=400  errors=400
+2026-05-03 22:38:30  INFO      Stage2 -     [500/3772] valid=500  errors=500
+2026-05-03 22:38:31  INFO      Stage2 -     [chunk 1 saved — RAM freed]
+2026-05-03 22:38:34  INFO      Stage2 -     [600/3772] valid=600  errors=600
+2026-05-03 22:38:36  INFO      Stage2 -     [700/3772] valid=700  errors=700
+2026-05-03 22:38:39  INFO      Stage2 -     [800/3772] valid=800  errors=800
+2026-05-03 22:38:42  INFO      Stage2 -     [900/3772] valid=900  errors=900
+2026-05-03 22:38:45  INFO      Stage2 -     [1000/3772] valid=1000  errors=1000
+2026-05-03 22:38:46  INFO      Stage2 -     [chunk 2 saved — RAM freed]
+2026-05-03 22:38:48  INFO      Stage2 -     [1100/3772] valid=1100  errors=1100
+2026-05-03 22:38:51  INFO      Stage2 -     [1200/3772] valid=1200  errors=1200
+2026-05-03 22:38:54  INFO      Stage2 -     [1300/3772] valid=1300  errors=1300
+2026-05-03 22:38:57  INFO      Stage2 -     [1400/3772] valid=1400  errors=1400
+2026-05-03 22:39:00  INFO      Stage2 -     [1500/3772] valid=1500  errors=1500
+2026-05-03 22:39:01  INFO      Stage2 -     [chunk 3 saved — RAM freed]
+2026-05-03 22:39:04  INFO      Stage2 -     [1600/3772] valid=1600  errors=1600
+2026-05-03 22:39:07  INFO      Stage2 -     [1700/3772] valid=1700  errors=1700
+2026-05-03 22:39:10  INFO      Stage2 -     [1800/3772] valid=1800  errors=1800
+2026-05-03 22:39:13  INFO      Stage2 -     [1900/3772] valid=1900  errors=1900
+2026-05-03 22:39:16  INFO      Stage2 -     [2000/3772] valid=2000  errors=2000
+2026-05-03 22:39:17  INFO      Stage2 -     [chunk 4 saved — RAM freed]
+2026-05-03 22:39:19  INFO      Stage2 -     [2100/3772] valid=2100  errors=2100
+2026-05-03 22:39:23  INFO      Stage2 -     [2200/3772] valid=2200  errors=2200
+2026-05-03 22:39:27  INFO      Stage2 -     [2300/3772] valid=2300  errors=2300
+2026-05-03 22:39:30  INFO      Stage2 -     [2400/3772] valid=2400  errors=2400
+2026-05-03 22:39:34  INFO      Stage2 -     [2500/3772] valid=2500  errors=2500
+2026-05-03 22:39:34  INFO      Stage2 -     [chunk 5 saved — RAM freed]
+2026-05-03 22:39:38  INFO      Stage2 -     [2600/3772] valid=2600  errors=2600
+2026-05-03 22:39:41  INFO      Stage2 -     [2700/3772] valid=2700  errors=2700
+2026-05-03 22:39:44  INFO      Stage2 -     [2800/3772] valid=2800  errors=2800
+2026-05-03 22:39:47  INFO      Stage2 -     [2900/3772] valid=2900  errors=2900
+2026-05-03 22:39:51  INFO      Stage2 -     [3000/3772] valid=3000  errors=3000
+2026-05-03 22:39:51  INFO      Stage2 -     [chunk 6 saved — RAM freed]
+2026-05-03 22:39:55  INFO      Stage2 -     [3100/3772] valid=3100  errors=3100
+2026-05-03 22:39:58  INFO      Stage2 -     [3200/3772] valid=3200  errors=3200
+2026-05-03 22:40:01  INFO      Stage2 -     [3300/3772] valid=3300  errors=3300
+2026-05-03 22:40:04  INFO      Stage2 -     [3400/3772] valid=3400  errors=3400
+2026-05-03 22:40:07  INFO      Stage2 -     [3500/3772] valid=3500  errors=3500
+2026-05-03 22:40:08  INFO      Stage2 -     [chunk 7 saved — RAM freed]
+2026-05-03 22:40:11  INFO      Stage2 -     [3600/3772] valid=3600  errors=3600
+2026-05-03 22:40:14  INFO      Stage2 -     [3700/3772] valid=3700  errors=3700
+2026-05-03 22:40:16  INFO      Stage2 -   train done: 3772/3772 valid, 3772 errors
+2026-05-03 22:40:28  INFO      Stage2 -   Saved: C:\Sumiya\FYP\securaqpp_final\SecuraQpp_v2_WITH_2FA_EMAIL\securaqpp\ml_core\data\graphs\fs\train.pkl  (3772 bundles)
+2026-05-03 22:40:28  INFO      Stage2 - Building graphs for split: val
+2026-05-03 22:40:28  INFO      Stage2 -   val: 809 samples
+2026-05-03 22:40:31  INFO      Stage2 -     [100/809] valid=100  errors=100
+2026-05-03 22:40:34  INFO      Stage2 -     [200/809] valid=200  errors=200
+2026-05-03 22:40:36  INFO      Stage2 -     [300/809] valid=300  errors=300
+2026-05-03 22:40:39  INFO      Stage2 -     [400/809] valid=400  errors=400
+2026-05-03 22:40:42  INFO      Stage2 -     [500/809] valid=500  errors=500
+2026-05-03 22:40:43  INFO      Stage2 -     [chunk 1 saved — RAM freed]
+2026-05-03 22:40:46  INFO      Stage2 -     [600/809] valid=600  errors=600
+2026-05-03 22:40:50  INFO      Stage2 -     [700/809] valid=700  errors=700
+2026-05-03 22:40:53  INFO      Stage2 -     [800/809] valid=800  errors=800
+2026-05-03 22:40:53  INFO      Stage2 -   val done: 809/809 valid, 809 errors
+2026-05-03 22:40:55  INFO      Stage2 -   Saved: C:\Sumiya\FYP\securaqpp_final\SecuraQpp_v2_WITH_2FA_EMAIL\securaqpp\ml_core\data\graphs\fs\val.pkl  (809 bundles)
+2026-05-03 22:40:55  INFO      Stage2 - Building graphs for split: test
+2026-05-03 22:40:56  INFO      Stage2 -   test: 809 samples
+2026-05-03 22:40:58  INFO      Stage2 -     [100/809] valid=100  errors=100
+2026-05-03 22:41:01  INFO      Stage2 -     [200/809] valid=200  errors=200
+2026-05-03 22:41:05  INFO      Stage2 -     [300/809] valid=300  errors=300
+2026-05-03 22:41:08  INFO      Stage2 -     [400/809] valid=400  errors=400
+2026-05-03 22:41:11  INFO      Stage2 -     [500/809] valid=500  errors=500
+2026-05-03 22:41:11  INFO      Stage2 -     [chunk 1 saved — RAM freed]
+2026-05-03 22:41:15  INFO      Stage2 -     [600/809] valid=600  errors=600
+2026-05-03 22:41:18  INFO      Stage2 -     [700/809] valid=700  errors=700
+2026-05-03 22:41:21  INFO      Stage2 -     [800/809] valid=800  errors=800
+2026-05-03 22:41:21  INFO      Stage2 -   test done: 809/809 valid, 809 errors
+2026-05-03 22:41:23  INFO      Stage2 -   Saved: C:\Sumiya\FYP\securaqpp_final\SecuraQpp_v2_WITH_2FA_EMAIL\securaqpp\ml_core\data\graphs\fs\test.pkl  (809 bundles)
+2026-05-03 22:51:22  WARNING   Stage2 - tree-sitter unavailable (No module named 'tree_sitter'), falling back to regex classifier
+2026-05-03 22:51:33  WARNING   Stage2 - tree-sitter unavailable (No module named 'tree_sitter'), falling back to regex classifier

@@ -1,0 +1,16 @@
+{
+  "dataset_name": "fs_test",
+  "accuracy": 0.8195,
+  "precision": 0.7955,
+  "recall": 0.8621,
+  "f1": 0.8274,
+  "mcc": 0.6412,
+  "roc_auc": 0.89,
+  "fpr": 0.2233,
+  "fnr": 0.1379,
+  "tp": 350,
+  "fp": 90,
+  "tn": 313,
+  "fn": 56,
+  "threshold": 0.42
+}

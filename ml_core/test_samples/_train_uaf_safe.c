@@ -1,0 +1,1 @@
+static void func_1() { char * VAR_5; char * VAR_2 = (char *)func_3(100*sizeof(char)); VAR_5 = VAR_2; if(VAR_6) { func_2(VAR_3); } else { memset(VAR_5, CHAR_CONST, 50-1); VAR_5[50-1] = CHAR_CONST; } { char VAR_4[50] = VAR_1; memmove(VAR_4, VAR_5, strlen(VAR_5)*sizeof(char)); VAR_4[50-1] = CHAR_CONST; func_2(VAR_5); } }

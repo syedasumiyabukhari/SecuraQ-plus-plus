@@ -1,0 +1,133 @@
+# ============================================================
+#  QEGVD — Quantum-Enhanced Graph-Based Vulnerability Detection
+#  Master Configuration File
+# ============================================================
+
+project:
+  name: QEGVD
+  version: "1.0.0"
+  seed: 42
+  log_level: INFO
+
+# ----------------------------------------------------------
+# Stage 1 — Dataset paths and split ratios
+# ----------------------------------------------------------
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  graphs_dir: data/graphs
+
+  datasets:
+    bo:
+      filename: bo_dataset_sanitized.csv
+      vulnerability: BufferOverflow
+      cwe: CWE-121/CWE-122
+    fs:
+      filename: fs_dataset_sanitized.csv
+      vulnerability: FormatString
+      cwe: CWE-134
+    uaf:
+      filename: uaf_dataset_sanitized.csv
+      vulnerability: UseAfterFree
+      cwe: CWE-416
+
+  splits:
+    train: 0.70
+    val:   0.15
+    test:  0.15
+    stratify: true
+
+  min_code_length: 10       # chars — drop degenerate samples
+  max_code_length: 8000     # chars — drop outlier blobs
+
+# ----------------------------------------------------------
+# Stage 2 — Graph construction
+# ----------------------------------------------------------
+graphs:
+  types: [AST, CFG, DFG, PDG, TPG, MAG, CG, FSG]
+  node_feature_dim: 64   # 64-dim per node feature vector
+  max_nodes_per_graph: 500
+  parser: tree_sitter           # tree-sitter C/C++ grammar
+
+# ----------------------------------------------------------
+# Stage 3 — Graph Attention Network (GAT)
+# ----------------------------------------------------------
+gat:
+  hidden_dim: 128
+  num_heads: 8
+  num_layers: 4
+  dropout: 0.3
+  residual: true
+  readout: mean_max_concat      # global pooling strategy
+
+# ----------------------------------------------------------
+# Stage 4 — Classical Feature Encoder
+# ----------------------------------------------------------
+encoder:
+  input_dim: 128                # GAT fused embedding dim
+  compressed_dim: 32            # target dim for quantum input
+  hidden_dims: [64]
+  activation: gelu
+  dropout: 0.2
+  batch_norm: true
+
+# ----------------------------------------------------------
+# Stage 5 — Quantum-Aware Feature Alignment (QAFA)
+# ----------------------------------------------------------
+qafa:
+  n_qubits: 8          # qubits per stage (8 features per stage)
+  n_selected: 16       # total features selected (2 stages x 8)
+  n_stages: 2          # two-stage data re-uploading
+  alpha: 0.40          # MI weight in composite score
+  beta: 0.35           # SHAP weight
+  gamma: 0.25          # graph centrality weight
+  angle_encoding: tanh # tanh rescale to [-pi, pi]
+
+# ----------------------------------------------------------
+# Stage 6 — Variational Quantum Circuit (VQC) — PennyLane
+# ----------------------------------------------------------
+vqc:
+  device: default.qubit         # CPU simulator
+  n_qubits: 4                   # paper: 4 qubits -> 4-dim output <Z0..Z3>
+  n_layers: 6                   # variational rotation layers
+  diff_method: parameter-shift  # quantum gradient method
+
+# ----------------------------------------------------------
+# Stage 7 — Residual Hybrid Feature Fusion
+# ----------------------------------------------------------
+fusion:
+  classical_dim: 32             # Stage 4 output
+  quantum_dim: 4                # VQC output (N_QUBITS=4)
+  fused_dim: 36                 # paper: concat(32,4)=36
+  fusion_type: residual_concat
+
+# ----------------------------------------------------------
+# Stage 8 — Binary Classifier
+# ----------------------------------------------------------
+classifier:
+  hidden_dim: 16                # paper: 36->16->1
+  dropout: 0.2                  # paper: dropout 0.2 on classifier
+  output_dim: 1                 # sigmoid binary output
+
+# ----------------------------------------------------------
+# Training
+# ----------------------------------------------------------
+training:
+  epochs: 100
+  batch_size: 32
+  optimizer: adamw
+  lr: 0.001
+  weight_decay: 0.0001
+  lr_scheduler: cosine
+  early_stopping_patience: 15   # paper Section 10.3
+  grad_clip: 1.0
+  mixed_precision: false        # CPU — no AMP
+
+# ----------------------------------------------------------
+# Stage 9 — Explainability
+# ----------------------------------------------------------
+explainability:
+  shap_background_samples: 100
+  gnnexplainer_epochs: 200
+  top_k_nodes: 10
+  output_dir: results/explanations

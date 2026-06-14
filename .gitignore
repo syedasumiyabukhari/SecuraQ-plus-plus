@@ -1,0 +1,7 @@
+auth_backend/.env  
+auth_backend/securaq.db  
+scanning_backend/uploads/  
+scanning_backend/output/  
+ml_core/.claude/  
+ml_core/models/  
+ml_core/data/ 

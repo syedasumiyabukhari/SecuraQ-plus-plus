@@ -1,0 +1,1 @@
+void func_1() { int VAR_7; VAR_5 VAR_3; VAR_7 = -1; fscanf(VAR_6, STR_1, &VAR_7); VAR_3.VAR_5 = VAR_7; { int VAR_7 = VAR_3.func_3; { int VAR_8; int * VAR_1 = new int[10]; for (VAR_8 = 0; VAR_8 < 10; VAR_8++) { VAR_1[VAR_8] = 0; } if (VAR_7 >= 0) { VAR_1[VAR_7] = 1; for(VAR_8 = 0; VAR_8 < 10; VAR_8++) { func_3(VAR_1[VAR_8]); } } else { func_2(STR_2); } delete[] VAR_1; } } }

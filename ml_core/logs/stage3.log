@@ -1,0 +1,40 @@
+2026-05-03 22:48:45  INFO      Stage3 - ============================================================
+2026-05-03 22:48:45  INFO      Stage3 - Stage 3 -- FS
+2026-05-03 22:48:45  INFO      Stage3 - ============================================================
+2026-05-03 22:48:46  INFO      Stage3 - Loading graph bundles...
+2026-05-03 22:48:46  WARNING   Stage2 - tree-sitter unavailable (No module named 'tree_sitter'), falling back to regex classifier
+2026-05-03 22:48:53  INFO      Stage3 -   Train=3772, Val=809, Test=809
+2026-05-03 22:48:53  INFO      Stage3 -   Detected node feature dim: 84
+2026-05-03 22:48:53  WARNING   Stage3 - [train] Skipped 3772 invalid bundles
+2026-05-03 22:52:16  INFO      Stage3 - ============================================================
+2026-05-03 22:52:16  INFO      Stage3 - Stage 3 -- FS
+2026-05-03 22:52:16  INFO      Stage3 - ============================================================
+2026-05-03 22:52:16  INFO      Stage3 - Loading graph bundles...
+2026-05-03 22:52:17  WARNING   Stage2 - tree-sitter unavailable (No module named 'tree_sitter'), falling back to regex classifier
+2026-05-03 22:52:24  INFO      Stage3 -   Train=3772, Val=809, Test=809
+2026-05-03 22:52:24  INFO      Stage3 -   Detected node feature dim: 84
+2026-05-03 22:52:24  INFO      Stage3 -   Parameters: 2,907,873  (adaptive for n_train=3772)
+2026-05-03 22:52:24  INFO      Stage3 -   Config: hidden=128 heads=8 layers=4 view_dim=256 dropout=0.2 edge_drop=0.1 label_smooth=0.02
+2026-05-03 22:52:24  INFO      Stage3 -   Training: max_epochs=200, batch=32, lr=0.001, patience=35
+2026-05-03 22:56:24  INFO      Stage3 -   Epoch 001  tr_loss=1.7491  tr_acc=0.502  val_loss=0.6943  val_f1=0.0000  val_auc=0.5740  gap=+1.055  lr=5.0e-04  [240s]
+2026-05-03 22:56:24  INFO      Stage3 -   [SAVE] val_auc=0.5740  val_f1=0.0000
+2026-05-03 23:01:14  INFO      Stage3 -   Epoch 002  tr_loss=1.7295  tr_acc=0.534  val_loss=0.6835  val_f1=0.3429  val_auc=0.5821  gap=+1.046  lr=5.0e-04  [290s]
+2026-05-03 23:01:14  INFO      Stage3 -   [SAVE] val_auc=0.5821  val_f1=0.3429
+2026-05-03 23:03:36  INFO      Stage3 -   Epoch 003  tr_loss=1.7284  tr_acc=0.531  val_loss=0.6839  val_f1=0.5614  val_auc=0.5656  gap=+1.045  lr=5.0e-04  [142s]
+2026-05-03 23:08:58  INFO      Stage3 -   Epoch 004  tr_loss=1.7152  tr_acc=0.578  val_loss=0.6851  val_f1=0.5185  val_auc=0.5787  gap=+1.030  lr=5.0e-04  [322s]
+2026-05-03 23:15:49  INFO      Stage3 -   Epoch 005  tr_loss=1.7066  tr_acc=0.586  val_loss=0.6863  val_f1=0.6021  val_auc=0.5936  gap=+1.020  lr=5.0e-04  [411s]
+2026-05-03 23:15:49  INFO      Stage3 -   [SAVE] val_auc=0.5936  val_f1=0.6021
+2026-05-03 23:20:40  INFO      Stage3 -   Epoch 006  tr_loss=1.6994  tr_acc=0.604  val_loss=0.6847  val_f1=0.6760  val_auc=0.5933  gap=+1.015  lr=5.0e-04  [291s]
+2026-05-03 23:26:12  INFO      Stage3 -   Epoch 007  tr_loss=1.6890  tr_acc=0.615  val_loss=0.6772  val_f1=0.6262  val_auc=0.6056  gap=+1.012  lr=5.0e-04  [332s]
+2026-05-03 23:26:12  INFO      Stage3 -   [SAVE] val_auc=0.6056  val_f1=0.6262
+2026-05-03 23:49:23  INFO      Stage3 -   Epoch 008  tr_loss=1.6788  tr_acc=0.626  val_loss=0.6851  val_f1=0.6425  val_auc=0.6349  gap=+0.994  lr=5.0e-04  [1390s]
+2026-05-03 23:49:23  INFO      Stage3 -   [SAVE] val_auc=0.6349  val_f1=0.6425
+2026-05-03 23:51:15  INFO      Stage3 -   Epoch 009  tr_loss=1.6809  tr_acc=0.631  val_loss=0.6611  val_f1=0.6781  val_auc=0.6388  gap=+1.020  lr=5.0e-04  [112s]
+2026-05-03 23:51:15  INFO      Stage3 -   [SAVE] val_auc=0.6388  val_f1=0.6781
+2026-05-03 23:54:55  INFO      Stage3 -   Epoch 010  tr_loss=1.6671  tr_acc=0.639  val_loss=0.6429  val_f1=0.6863  val_auc=0.6479  gap=+1.024  lr=5.0e-04  [220s]
+2026-05-03 23:54:55  INFO      Stage3 -   [SAVE] val_auc=0.6479  val_f1=0.6863
+2026-05-03 23:59:07  INFO      Stage3 -   Epoch 011  tr_loss=1.6573  tr_acc=0.656  val_loss=0.6735  val_f1=0.6902  val_auc=0.6608  gap=+0.984  lr=5.0e-04  [252s]
+2026-05-03 23:59:07  INFO      Stage3 -   [SAVE] val_auc=0.6608  val_f1=0.6902
+2026-05-04 00:02:13  INFO      Stage3 -   Epoch 012  tr_loss=1.6491  tr_acc=0.664  val_loss=0.6340  val_f1=0.6812  val_auc=0.6739  gap=+1.015  lr=5.0e-04  [186s]
+2026-05-04 00:02:13  INFO      Stage3 -   [SAVE] val_auc=0.6739  val_f1=0.6812
+2026-05-04 00:06:01  INFO      Stage3 -   Epoch 013  tr_loss=1.6400  tr_acc=0.670  val_loss=0.6592  val_f1=0.6507  val_auc=0.6609  gap=+0.981  lr=5.0e-04  [227s]

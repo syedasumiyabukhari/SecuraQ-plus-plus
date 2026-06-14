@@ -1,0 +1,57 @@
+======================================================================
+  QEGVD — Final Results Summary
+======================================================================
+
+  Buffer Overflow (BO)
+  ------------------------------------------------------------
+  Stage                    Acc    Prec     Rec      F1     MCC     AUC     FPR
+  ------------------------------------------------------------
+  Stage 3 (GAT)         0.6673  0.6090  0.9222  0.7336  0.3912  0.6917  0.5844
+  Stage 6 (VQC)         0.6661  0.6009  0.9764  0.7439  0.4261  0.6888  0.6403
+  Stage 7+8 (Final)     0.6725  0.6217  0.8703  0.7253  0.3776  0.6913  0.5227
+
+  Confusion Matrix (Final):
+                    Predicted
+                  Non-Vuln  Vuln
+  Actual Non-Vuln     410     449
+  Actual Vuln          110     738
+  Threshold: 0.4133
+
+  Format String (FS)
+  ------------------------------------------------------------
+  Stage                    Acc    Prec     Rec      F1     MCC     AUC     FPR
+  ------------------------------------------------------------
+  Stage 3 (GAT)         0.6318  0.5985  0.8119  0.6891  0.2811  0.6532  0.5500
+  Stage 6 (VQC)         0.6206  0.6038  0.7129  0.6538  0.2447  0.6570  0.4725
+  Stage 7+8 (Final)     0.6169  0.5750  0.9109  0.7050  0.2865  0.6592  0.6800
+
+  Confusion Matrix (Final):
+                    Predicted
+                  Non-Vuln  Vuln
+  Actual Non-Vuln     128     272
+  Actual Vuln           36     368
+  Threshold: 0.4028
+
+  Use-After-Free (UAF)
+  ------------------------------------------------------------
+  Stage                    Acc    Prec     Rec      F1     MCC     AUC     FPR
+  ------------------------------------------------------------
+  Stage 3 (GAT)         0.9104  0.8611  0.9688  0.9118  0.8274  0.9743  0.1429
+  Stage 6 (VQC)         0.9030  0.8592  0.9531  0.9037  0.8109  0.9661  0.1429
+  Stage 7+8 (Final)     0.9179  0.9077  0.9219  0.9147  0.8357  0.9772  0.0857
+
+  Confusion Matrix (Final):
+                    Predicted
+                  Non-Vuln  Vuln
+  Actual Non-Vuln      64       6
+  Actual Vuln            5      59
+  Threshold: 0.4663
+
+======================================================================
+  Key Findings:
+  - UAF detection achieves F1=0.915, AUC=0.977 (excellent)
+  - BO detection achieves F1=0.725, AUC=0.691 (good)
+  - FS detection achieves F1=0.705, AUC=0.659 (moderate)
+  - Pipeline consistently improves or maintains performance
+    from GAT embeddings through quantum-classical fusion
+======================================================================

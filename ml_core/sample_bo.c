@@ -1,0 +1,1 @@
+void func_1() { wchar_t * VAR_3; VAR_3 = NULL; if(5==5) { VAR_3 = new wchar_t[50]; VAR_3[0] = VAR_1; } { wchar_t func_2[100]; wmemset(func_2, VAR_1, 100-1); func_2[100-1] = VAR_1; memcpy(VAR_3, func_2, 100*sizeof(wchar_t)); VAR_3[100-1] = VAR_1; func_2(VAR_3); delete [] VAR_3; } }

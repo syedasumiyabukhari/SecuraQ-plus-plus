@@ -1,0 +1,1 @@
+void func_2() { long * VAR_3; VAR_3 = NULL; switch(VAR_4) { case 6: VAR_3 = (long *)malloc(100*sizeof(long)); if (VAR_3 == NULL) {func_4(-1);} { size_t VAR_2; for(VAR_2 = 0; VAR_2 < 100; VAR_2++) { VAR_3[VAR_2] = 5L; } } free(VAR_3); break; default: func_2(VAR_1); break; } switch(VAR_4) { case 7: func_3(VAR_3[0]); break; default: func_2(VAR_1); break; } }

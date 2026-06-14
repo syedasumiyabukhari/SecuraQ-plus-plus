@@ -1,0 +1,183 @@
+{
+  "code_length": 703,
+  "masked_length": 299,
+  "stage2": {
+    "n_statements": 11,
+    "graph_summary": {
+      "AST": {
+        "nodes": 21,
+        "edges": 20
+      },
+      "CFG": {
+        "nodes": 13,
+        "edges": 12
+      },
+      "DFG": {
+        "nodes": 11,
+        "edges": 0
+      },
+      "PDG": {
+        "nodes": 11,
+        "edges": 0
+      },
+      "TPG": {
+        "nodes": 11,
+        "edges": 2
+      },
+      "MAG": {
+        "nodes": 11,
+        "edges": 0
+      },
+      "CG": {
+        "nodes": 18,
+        "edges": 7
+      },
+      "FSG": {
+        "nodes": 17,
+        "edges": 6
+      }
+    },
+    "total_nodes": 113,
+    "total_edges": 47
+  },
+  "classifiers": {
+    "bo": {
+      "dataset": "bo",
+      "vulnerability_type": "Buffer Overflow",
+      "stage3": {
+        "embedding_dim": 256,
+        "mean": 0.195,
+        "gat_prob": 0.6699
+      },
+      "stage4": {
+        "active_features": 12
+      },
+      "stage5": {
+        "selected_indices": [
+          17,
+          9,
+          10,
+          29,
+          25,
+          11,
+          27,
+          0,
+          19,
+          18,
+          15,
+          3,
+          31,
+          12,
+          2,
+          1
+        ]
+      },
+      "stage6": {
+        "quantum_vector": [
+          0.9986,
+          0.2252,
+          0.4535,
+          0.2204
+        ]
+      },
+      "stage78": {
+        "hybrid_dim": 260,
+        "threshold": 0.4616,
+        "probability": 0.5616,
+        "verdict": "VULNERABLE"
+      }
+    },
+    "fs": {
+      "dataset": "fs",
+      "vulnerability_type": "Format String",
+      "stage3": {
+        "embedding_dim": 256,
+        "mean": 0.253,
+        "gat_prob": 0.7131
+      },
+      "stage4": {
+        "active_features": 19
+      },
+      "stage5": {
+        "selected_indices": [
+          6,
+          0,
+          14,
+          20,
+          22,
+          2,
+          26,
+          4,
+          5,
+          3,
+          9,
+          24,
+          16,
+          8,
+          1,
+          29
+        ]
+      },
+      "stage6": {
+        "quantum_vector": [
+          0.098,
+          -0.1527,
+          0.754,
+          0.5051
+        ]
+      },
+      "stage78": {
+        "hybrid_dim": 260,
+        "threshold": 0.3711,
+        "probability": 0.4719,
+        "verdict": "VULNERABLE"
+      }
+    },
+    "uaf": {
+      "dataset": "uaf",
+      "vulnerability_type": "Use-After-Free",
+      "stage3": {
+        "embedding_dim": 256,
+        "mean": 0.3144,
+        "gat_prob": 0.8279
+      },
+      "stage4": {
+        "active_features": 16
+      },
+      "stage5": {
+        "selected_indices": [
+          0,
+          2,
+          5,
+          1,
+          8,
+          17,
+          18,
+          14,
+          29,
+          16,
+          30,
+          10,
+          19,
+          27,
+          13,
+          25
+        ]
+      },
+      "stage6": {
+        "quantum_vector": [
+          -0.7649,
+          -0.0407,
+          0.3124,
+          0.5274
+        ]
+      },
+      "stage78": {
+        "hybrid_dim": 260,
+        "threshold": 0.3168,
+        "probability": 0.1668,
+        "verdict": "SAFE"
+      }
+    }
+  }
+}

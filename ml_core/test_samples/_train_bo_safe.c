@@ -1,0 +1,1 @@
+void func_2() { wchar_t * VAR_5; wchar_t * VAR_4 = (wchar_t *)func_2(50*sizeof(wchar_t)); wchar_t * VAR_4 = (wchar_t *)func_2(100*sizeof(wchar_t)); if(5==5) { VAR_5 = VAR_4; VAR_5[0] = VAR_1; } { wchar_t VAR_4[100]; wmemset(VAR_4, VAR_1, 100-1); VAR_4[100-1] = VAR_1; wcsncat(VAR_5, VAR_4, 100); func_3(VAR_5); } }

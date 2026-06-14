@@ -1,0 +1,42 @@
+2026-05-08 17:28:37  INFO      Stage6 - PennyLane 0.44.1 loaded — using real quantum circuit simulation
+2026-05-08 17:28:37  INFO      Stage6 - ============================================================
+2026-05-08 17:28:37  INFO      Stage6 - Stage 6 VQC -- FS  (PennyLane real quantum circuit)
+2026-05-08 17:28:37  INFO      Stage6 - ============================================================
+2026-05-08 17:28:37  INFO      stage6_enhanced_vqc - EnhancedVQC: quantum  qubits=8  reruns=5  out=40
+2026-05-08 17:28:37  INFO      Stage6 -   FS: EnhancedVQC  8-qubit + ZZ correlators  out=40-dim
+2026-05-08 17:28:37  INFO      Stage6 -   EnhancedVQC trainable params: 3208
+2026-05-08 17:28:37  INFO      Stage6 -   FS Enhanced: Train=3772 Val=809 Test=809
+2026-05-08 17:28:41  INFO      Stage6 -   Training EnhancedVQC for FS …
+2026-05-08 17:28:42  WARNING   Stage6 -   EnhancedVQC failed (Target size (torch.Size([32])) must be the same as input size (torch.Size([8]))), falling back to standard VQC
+2026-05-08 17:28:42  INFO      Stage6 -   Circuit: 4 qubits · 3 var-layers/block
+2026-05-08 17:28:42  INFO      Stage6 -   H^4 → RY/RZ(s1) → CNOT-ring → Var_A(3) → RY/RZ(s2) → CNOT-ring → Var_B(3) → <Z>^4
+2026-05-08 17:28:42  INFO      Stage6 -   VQC trainable params: 60
+2026-05-08 17:28:42  INFO      Stage6 -   Train=3772  Val=809  Test=809
+2026-05-08 17:28:42  INFO      Stage6 -   Input: 8 rounds × 8-dim → 32-dim quantum output
+2026-05-08 17:28:42  INFO      Stage6 -   Training: epochs=100  bs=32  patience=15
+2026-05-08 17:30:30  INFO      Stage6 -   Epoch 001  tr=0.0686  va=0.0671  f1=0.6928  acc=0.6799  [108s]
+2026-05-08 17:30:30  INFO      Stage6 -   [SAVE] val_loss=0.0671  thr=0.434
+2026-05-08 17:35:33  INFO      Stage6 -   Epoch 002  tr=0.0401  va=0.0831  f1=0.7130  acc=0.6836  [303s]
+2026-05-08 17:37:25  INFO      Stage6 -   Epoch 003  tr=0.0350  va=0.0923  f1=0.7143  acc=0.6836  [112s]
+2026-05-08 17:43:56  INFO      Stage6 -   Epoch 004  tr=0.0338  va=0.1052  f1=0.7187  acc=0.6836  [391s]
+2026-05-08 17:45:40  INFO      Stage6 -   Epoch 005  tr=0.0333  va=0.1182  f1=0.7135  acc=0.6823  [104s]
+2026-05-08 17:47:22  INFO      Stage6 -   Epoch 006  tr=0.0328  va=0.1181  f1=0.7185  acc=0.6823  [103s]
+2026-05-08 19:10:21  INFO      Stage6 -   Epoch 007  tr=0.0333  va=0.1175  f1=0.7128  acc=0.6823  [4979s]
+2026-05-08 19:12:06  INFO      Stage6 -   Epoch 008  tr=0.0327  va=0.1238  f1=0.7179  acc=0.6823  [105s]
+2026-05-08 19:23:37  INFO      Stage6 -   Epoch 009  tr=0.0332  va=0.1239  f1=0.7121  acc=0.6811  [692s]
+2026-05-08 19:27:59  INFO      Stage6 -   Epoch 010  tr=0.0328  va=0.1294  f1=0.7166  acc=0.6823  [262s]
+2026-05-08 19:31:34  INFO      Stage6 -   Epoch 011  tr=0.0327  va=0.1242  f1=0.7166  acc=0.6823  [215s]
+2026-05-08 20:00:40  INFO      Stage6 -   Epoch 012  tr=0.0326  va=0.1272  f1=0.7179  acc=0.6823  [1746s]
+2026-05-08 20:03:08  INFO      Stage6 -   Epoch 013  tr=0.0326  va=0.1243  f1=0.7121  acc=0.6811  [148s]
+2026-05-08 20:07:24  INFO      Stage6 -   Epoch 014  tr=0.0327  va=0.1304  f1=0.7121  acc=0.6811  [256s]
+2026-05-08 20:11:41  INFO      Stage6 -   Epoch 015  tr=0.0327  va=0.1296  f1=0.7141  acc=0.6823  [257s]
+2026-05-08 20:15:56  INFO      Stage6 -   Epoch 016  tr=0.0323  va=0.1223  f1=0.7127  acc=0.6811  [255s]
+2026-05-08 20:15:56  INFO      Stage6 -   [EARLY STOP] epoch 16
+2026-05-08 20:15:56  INFO      utils.metrics - Epoch history saved → C:\Sumiya\FYP\securaqpp_final\SecuraQpp_v2_WITH_2FA_EMAIL\securaqpp\ml_core\results\metrics\fs_stage6_history.json
+2026-05-08 20:15:56  INFO      Stage6 -   Extracting quantum vectors (N, 32) for all splits...
+2026-05-08 20:16:55  INFO      Stage6 -   train: (3772, 32)  range=[-0.744, 0.803]
+2026-05-08 20:17:07  INFO      Stage6 -   val: (809, 32)  range=[-0.847, 0.814]
+2026-05-08 20:17:19  INFO      Stage6 -   test: (809, 32)  range=[-0.625, 0.755]
+2026-05-08 20:17:21  INFO      utils.metrics - Metrics saved → C:\Sumiya\FYP\securaqpp_final\SecuraQpp_v2_WITH_2FA_EMAIL\securaqpp\ml_core\results\metrics\fs_stage6_test.json
+2026-05-08 20:17:21  INFO      Stage6 - Stage 6 [OK] 'FS'
+
