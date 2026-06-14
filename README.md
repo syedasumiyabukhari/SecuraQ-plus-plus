@@ -1,7 +1,7 @@
 # SecuraQ++ — Quantum-Hybrid Vulnerability Detection Platform
 
 > **Final Year Project · COMSATS University Islamabad · 2024–2026**  
-> Syeda Sumiya Bukhari · Irfan · Supervisor: Dr. Farhana Jabeen
+> Syeda Sumiya Bukhari · manahil · Supervisor: Dr. Farhana Jabeen
 
 ---
 
