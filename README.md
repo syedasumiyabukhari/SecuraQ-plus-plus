@@ -133,7 +133,7 @@ Supervisor: Dr. Farhana Jabeen, Department of Computer Science, COMSATS Universi
 | Name | Role |
 |---|---|
 | Syeda Sumiya Bukhari | ML pipeline, quantum circuits, frontend, system integration |
-| Irfan | Backend architecture, scanning engine, auth system, deployment |
+| manahil | Backend architecture, scanning engine, auth system, deployment |
 
 ---
 
